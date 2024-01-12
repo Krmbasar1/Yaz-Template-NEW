@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Yaz Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body id="body">
+    <!-- NAVBAR START -->
+    <nav id="navbar">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex tel mb-2"><i class="bi bi-telephone me-2 text-light"></i><a href="tel: +90 212 288 53 70 | 71 | 72" class="text-light">+90 212 288 53 70 | 71 | 72</a></div>
+                <div class="d-flex mail"><i class="bi bi-envelope-at me-2 text-light"></i><a href="mailto:info@yaz.com.tr" class="text-light">info@yaz.com.tr</a></div>
+            </div>
+            <div class="col-6">
+                <div class="clip text-center" id="menu-clip" onclick="Open_M()">
+                    <h2>MENU</h2>
+                </div>
+            </div>
+            <div class="col text-end">
+                <div class="social_media mb-2">
+                    <a href="https://twitter.com/yaz_bilgi/" class="me-4"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://tr.linkedin.com/company/yazbilgisistemleri" class="me-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://tr-tr.facebook.com/yazbilgisistemleri/"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class="lang">
+                    <i class="bi bi-translate text-light" onclick="Open_Lang()"></i>
+                    <div class="lang-select" id="langSelect">
+                        <div class="tr">
+                            <a href=""><svg width="24px" height="24px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_503_4206)"> <rect width="28" height="20" rx="2" fill="white"></rect> <mask id="mask0_503_4206" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"> <rect width="28" height="20" rx="2" fill="white"></rect> </mask> <g mask="url(#mask0_503_4206)"> <rect width="28" height="20" fill="#E92434"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0208 10.7684L17.796 12.2533L17.8795 10.3302L16.0887 9.62423L17.9434 9.1093L18.0615 7.18799L19.1244 8.79287L20.9881 8.31142L19.7902 9.81822L20.8241 11.442L19.0208 10.7684V10.7684V10.7684V10.7684Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4028 13.6838C16.3049 15.0934 14.5916 16 12.6665 16C9.3528 16 6.6665 13.3137 6.6665 10C6.6665 6.68629 9.3528 4 12.6665 4C14.5916 4 16.3049 4.90659 17.4028 6.31611C16.5555 5.70019 15.4902 5.33331 14.333 5.33331C11.5716 5.33331 9.33301 7.42265 9.33301 9.99998C9.33301 12.5773 11.5716 14.6666 14.333 14.6666C15.4902 14.6666 16.5556 14.2997 17.4028 13.6838Z" fill="white"></path> </g> </g> <defs> <clipPath id="clip0_503_4206"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg></a>
+                        </div>
+                        <div class="en">
+                            <a href=""><svg width="24px" height="24px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_503_3486)"> <rect width="28" height="20" rx="2" fill="white"></rect> <mask id="mask0_503_3486" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"> <rect width="28" height="20" rx="2" fill="white"></rect> </mask> <g mask="url(#mask0_503_3486)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H0V1.33333H28V0ZM28 2.66667H0V4H28V2.66667ZM0 5.33333H28V6.66667H0V5.33333ZM28 8H0V9.33333H28V8ZM0 10.6667H28V12H0V10.6667ZM28 13.3333H0V14.6667H28V13.3333ZM0 16H28V17.3333H0V16ZM28 18.6667H0V20H28V18.6667Z" fill="#D02F44"></path> <rect width="12" height="9.33333" fill="#46467F"></rect> <g filter="url(#filter0_d_503_3486)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66665 1.99999C2.66665 2.36818 2.36817 2.66666 1.99998 2.66666C1.63179 2.66666 1.33331 2.36818 1.33331 1.99999C1.33331 1.63181 1.63179 1.33333 1.99998 1.33333C2.36817 1.33333 2.66665 1.63181 2.66665 1.99999ZM5.33331 1.99999C5.33331 2.36818 5.03484 2.66666 4.66665 2.66666C4.29846 2.66666 3.99998 2.36818 3.99998 1.99999C3.99998 1.63181 4.29846 1.33333 4.66665 1.33333C5.03484 1.33333 5.33331 1.63181 5.33331 1.99999ZM7.33331 2.66666C7.7015 2.66666 7.99998 2.36818 7.99998 1.99999C7.99998 1.63181 7.7015 1.33333 7.33331 1.33333C6.96512 1.33333 6.66665 1.63181 6.66665 1.99999C6.66665 2.36818 6.96512 2.66666 7.33331 2.66666ZM10.6666 1.99999C10.6666 2.36818 10.3682 2.66666 9.99998 2.66666C9.63179 2.66666 9.33331 2.36818 9.33331 1.99999C9.33331 1.63181 9.63179 1.33333 9.99998 1.33333C10.3682 1.33333 10.6666 1.63181 10.6666 1.99999ZM3.33331 3.99999C3.7015 3.99999 3.99998 3.70152 3.99998 3.33333C3.99998 2.96514 3.7015 2.66666 3.33331 2.66666C2.96512 2.66666 2.66665 2.96514 2.66665 3.33333C2.66665 3.70152 2.96512 3.99999 3.33331 3.99999ZM6.66665 3.33333C6.66665 3.70152 6.36817 3.99999 5.99998 3.99999C5.63179 3.99999 5.33331 3.70152 5.33331 3.33333C5.33331 2.96514 5.63179 2.66666 5.99998 2.66666C6.36817 2.66666 6.66665 2.96514 6.66665 3.33333ZM8.66665 3.99999C9.03484 3.99999 9.33331 3.70152 9.33331 3.33333C9.33331 2.96514 9.03484 2.66666 8.66665 2.66666C8.29846 2.66666 7.99998 2.96514 7.99998 3.33333C7.99998 3.70152 8.29846 3.99999 8.66665 3.99999ZM10.6666 4.66666C10.6666 5.03485 10.3682 5.33333 9.99998 5.33333C9.63179 5.33333 9.33331 5.03485 9.33331 4.66666C9.33331 4.29847 9.63179 3.99999 9.99998 3.99999C10.3682 3.99999 10.6666 4.29847 10.6666 4.66666ZM7.33331 5.33333C7.7015 5.33333 7.99998 5.03485 7.99998 4.66666C7.99998 4.29847 7.7015 3.99999 7.33331 3.99999C6.96512 3.99999 6.66665 4.29847 6.66665 4.66666C6.66665 5.03485 6.96512 5.33333 7.33331 5.33333ZM5.33331 4.66666C5.33331 5.03485 5.03484 5.33333 4.66665 5.33333C4.29846 5.33333 3.99998 5.03485 3.99998 4.66666C3.99998 4.29847 4.29846 3.99999 4.66665 3.99999C5.03484 3.99999 5.33331 4.29847 5.33331 4.66666ZM1.99998 5.33333C2.36817 5.33333 2.66665 5.03485 2.66665 4.66666C2.66665 4.29847 2.36817 3.99999 1.99998 3.99999C1.63179 3.99999 1.33331 4.29847 1.33331 4.66666C1.33331 5.03485 1.63179 5.33333 1.99998 5.33333ZM3.99998 5.99999C3.99998 6.36819 3.7015 6.66666 3.33331 6.66666C2.96512 6.66666 2.66665 6.36819 2.66665 5.99999C2.66665 5.6318 2.96512 5.33333 3.33331 5.33333C3.7015 5.33333 3.99998 5.6318 3.99998 5.99999ZM5.99998 6.66666C6.36817 6.66666 6.66665 6.36819 6.66665 5.99999C6.66665 5.6318 6.36817 5.33333 5.99998 5.33333C5.63179 5.33333 5.33331 5.6318 5.33331 5.99999C5.33331 6.36819 5.63179 6.66666 5.99998 6.66666ZM9.33331 5.99999C9.33331 6.36819 9.03484 6.66666 8.66665 6.66666C8.29846 6.66666 7.99998 6.36819 7.99998 5.99999C7.99998 5.6318 8.29846 5.33333 8.66665 5.33333C9.03484 5.33333 9.33331 5.6318 9.33331 5.99999ZM9.99998 8C10.3682 8 10.6666 7.70152 10.6666 7.33333C10.6666 6.96514 10.3682 6.66666 9.99998 6.66666C9.63179 6.66666 9.33331 6.96514 9.33331 7.33333C9.33331 7.70152 9.63179 8 9.99998 8ZM7.99998 7.33333C7.99998 7.70152 7.7015 8 7.33331 8C6.96512 8 6.66665 7.70152 6.66665 7.33333C6.66665 6.96514 6.96512 6.66666 7.33331 6.66666C7.7015 6.66666 7.99998 6.96514 7.99998 7.33333ZM4.66665 8C5.03484 8 5.33331 7.70152 5.33331 7.33333C5.33331 6.96514 5.03484 6.66666 4.66665 6.66666C4.29846 6.66666 3.99998 6.96514 3.99998 7.33333C3.99998 7.70152 4.29846 8 4.66665 8ZM2.66665 7.33333C2.66665 7.70152 2.36817 8 1.99998 8C1.63179 8 1.33331 7.70152 1.33331 7.33333C1.33331 6.96514 1.63179 6.66666 1.99998 6.66666C2.36817 6.66666 2.66665 6.96514 2.66665 7.33333Z" fill="url(#paint0_linear_503_3486)"></path> </g> </g> </g> <defs> <filter id="filter0_d_503_3486" x="1.33331" y="1.33333" width="9.33331" height="7.66667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix> <feOffset dy="1"></feOffset> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"></feColorMatrix> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_3486"></feBlend> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_3486" result="shape"></feBlend> </filter> <linearGradient id="paint0_linear_503_3486" x1="1.33331" y1="1.33333" x2="1.33331" y2="7.99999" gradientUnits="userSpaceOnUse"> <stop stop-color="white"></stop> <stop offset="1" stop-color="#F0F0F0"></stop> </linearGradient> <clipPath id="clip0_503_3486"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- NAVBAR-MENU START -->
+    <div class="menu_container">
+        <div class="M_container"  id="menu-open">
+            <div class="up-1"><a href="index.html">Anasayfa</a></div>
+            <div class="down-1"><a href="services.html">Hizmetlerimiz</a></div>
+            <div class="up-2"><a href="product.html">Ürünlerimiz</a></div>
+            <div class="down-2"><a href="about.html">Hakkımızda</a></div>
+            <div class="up-3"><a href="contact.html">İletişim</a></div>
+        </div>
+    </div>
+    <!-- NAVBAR-MENU END -->
+    <!-- HEADER START -->
+    <header class="about py-5" style="background-color: rgb(255, 236, 204);">
+        <div class="row text-center">
+            <div class="col-md animate__animated animate__fadeIn"><img src="img/main-privacy-and-cookies.png" class="w-75" alt=""></div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <div class="line" style="height: 1vh; background-color: rgb(0, 97, 224);"></div>
+    <div class="goTopBtn"><i class="bi bi-arrow-up"></i></div>
+    <!-- ABOUT SECTION START -->
+    <section class="px-4">
+        <div class="row d-flex flex-column">
+            <div class="col-md d-flex justify-content-center flex-column animate__animated animate__fadeInLeft">
+                <h1 class="text-center">ÇEREZ (COOKIE) POLİTİKAMIZ HAKKINDA BİLGİLENDİRME</h1>
+                <h5 class="mt-5 mb-2 fw-bold" style="color: rgb(71, 71, 71);" >Çerez (Cookie) Nedir?</h5>
+                <p>Günümüzde neredeyse her web sitesi çerez kullanmaktadır. Size daha iyi, hızlı ve güvenli bir deneyim sağlamak için, çoğu internet sitesi gibi biz de çerezler kullanıyoruz. Çerez, bir web sitesini ziyaret ettiğinizde cihazınıza (örneğin; bilgisayar veya cep telefonu) depolanan küçük bir metin dosyasıdır. Çerezler, bir web sitesini ilk ziyaretiniz sırasında tarayıcınız aracılığıyla cihazınıza depolanabilirler. Aynı siteyi aynı cihazla tekrar ziyaret ettiğinizde tarayıcınız cihazınızda site adına kayıtlı bir çerez olup olmadığını kontrol eder. Eğer kayıt var ise, kaydın içindeki veriyi ziyaret etmekte olduğunuz web sitesine iletir. Bu sayede web sitesi, sizin siteyi daha önce ziyaret ettiğinizi anlar ve size iletilecek içeriği de ona göre tayin eder.</p>
+            </div>
+            <div class="col-md animate__animated animate__fadeInRight text-center">
+                <img src="img/cookies.jpg" class="w-50 rounded" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
+                <h3 class="mb-3">Çerezler Neden Kullanılır?</h3>
+                <p>Bazı çerezler, daha önceki ziyaretlerinizde kullandığınız tercihlerin web sitesi tarafından hatırlanmasını sağlayarak, sonraki ziyaretlerinizin çok daha kullanıcı dostu ve kişiselleştirilmiş bir deneyim sunmasını sağlar. Ayrıca, web sitesinde bulunan üçüncü taraflara ait linkler, bu üçüncü taraflara ait gizlilik politikalarına tabi olmakla birlikte, gizlilik uygulamalarına ait sorumluluk <a href="https://www.yaz.com.tr">www.yaz.com.tr</a>’a ait olmamaktadır ve bu bağlamda ilgili link kapsamındaki site ziyaret edildiğinde siteye ait gizlilik politikasının okunması önerilmektedir.</p>
+            </div>
+        </div>
+        <div class="row" id="MSYN">
+            <div class="col-md d-flex justify-content-center flex-column animate__animated animate__fadeInLeft">
+                <h4 class="mb-3">Güvenlik amaçlı kullanımlar</h4>
+                <p><a href="https://www.yaz.com.tr">www.yaz.com.tr</a>, sistemlerinin idaresi ve güvenliğinin sağlanması amacıyla, bu sitedeki fonksiyonlardan yararlanmayı sağlayan veyahut düzensiz davranışları tespit eden çerezler kullanabilmektedir. İşlevselliğe yönelik kullanımlar: <a href="https://www.yaz.com.tr">www.yaz.com.tr</a>, sistemlerinin kullanımını kolaylaştırmak ve kullanıcı özelinde kullanım özellikleri sağlamak amacıyla, kullanıcıların bilgilerini ve geçmiş seçimlerini hatırlatan çerezler kullanabilmektedir. Performansa yönelik kullanımlar: <a href="https://www.yaz.com.tr">www.yaz.com.tr</a>, sistemlerinin performansının artırılması ve ölçülmesi amacıyla, gönderilen iletilerle olan etkileşimi ve kullanıcı davranışlarını değerlendiren ve analiz eden çerezler kullanabilmektedir.</p>
+            </div>
+            <div class="col-md text-end animate__animated animate__fadeInRight">
+                <img src="img/cookies-2.png" class="w-75 rounded" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md text-start d-flex align-items-center animate__animated animate__fadeInLeft">
+                <img src="img/cookies-3.jpg" class="rounded" width="85%" alt="">
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInRight">
+                <h4 class="mb-3">Reklam amaçlı kullanımlar</h4>
+                <p class="mb-3"><a href="https://www.yaz.com.tr">www.yaz.com.tr</a>, kendine veya üçüncü taraflara ait sistemlerin üzerinden kullanıcıların ilgi alanları kapsamında reklam ve benzeri içeriklerin iletilmesi amacıyla, bu reklamların etkinliğini ölçen veya tıklanma durumunu analiz eden çerezler kullanabilmektedir. Reklam Amaçlı Çerez Kullanımımız <a href="https://www.yaz.com.tr">www.yaz.com.tr</a>, Google Adsense reklam sistemi kullanmaktadır. Bu sistem Google tarafından İçerik için AdSense reklamlarının görüntülendiği yayıncı web sitelerinde sunulan reklamlarda kullanalan DoubleClick DART çerezi içerir. Üçüncü taraf satıcı olarak Google, sitemizde reklam yayınlamak için çerezlerden yararlanır. Bu çerezlerini kullanarak kullanıcılarınıza, sitenize ve İnternet’teki diğer sitelere yaptıkları ziyaretlere dayalı reklamlar sunar. Google reklam ve içerik ağı gizlilik politikasını ziyaret ederek DART çerezinin kullanılmasını engelleyebilirsiniz. Google Web sitemizi ziyaret ettiği zamanlarda reklam hizmeti vermek için üçüncü taraf reklam şirketlerini kullanmaktadır. Söz konusu şirketler, bu sitelere ve diğer web sitelerine yaptığınız ziyaretlerden elde ettikleri (adınız, adresiniz, e-posta adresiniz veya telefon numaranız dışındaki) bilgileri ilginizi çekecek ürün ve hizmetlerin reklamını size göstermek için kullanabilir.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex justify-content-center flex-column animate__animated animate__fadeInLeft">
+                <h4 class="mb-3">Çerezleri Kontrol Etme ve Silme</h4>
+                <p class="mb-3">Çerezlerin kullanımına ilişkin tercihlerinizi değiştirmek ya da çerezleri engellemek veya silmek için tarayıcınızın ayarlarını değiştirmeniz yeterlidir. Birçok tarayıcı çerezleri kontrol edebilmeniz için size çerezleri kabul etme veya reddetme, yalnızca belirli türdeki çerezleri kabul etme ya da bir web sitesi cihazınıza çerez depolamayı talep ettiğinde tarayıcı tarafından uyarılma seçeneği sunar. Aynı zamanda daha önce tarayıcınıza kaydedilmiş çerezlerin silinmesi de mümkündür. Çerezleri kontrol edilmesine veya silinmesine ilişkin işlemler kullandığınız tarayıcıya göre değişebilmektedir. Bazı popüler tarayıcıların çerezlere izin verme ya da çerezleri engelleme veya silme talimatlarına aşağıdaki linklerden ulaşılması mümkündür.</p>
+                <p>Çerez kullanım seçiminin değiştirilmesine ait yöntem, tarayıcı tipine bağlı olarak değişmekte olup, ilgili hizmet sağlayıcıdan dilendiği zaman öğrenilebilmektedir.</p>
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-end animate__animated animate__fadeInRight">
+                <img src="img/cookies-4.png" class="rounded" width="85%"  alt="">
+            </div>
+        </div>
+        <div class="privacy text-center animate__animated animate__fadeInDown mt-5">
+            <h1>GİZLİLİK POLİTİKAMIZ</h1>
+        </div>
+        <div class="row">
+            <div class="col-md text-center animate__animated animate__fadeInLeft">
+                <img src="img/privacy-policy.svg" class="w-75" alt="">
+            </div>
+            <div class="col-md mb-5 d-flex flex-column justify-content-center animate__animated animate__fadeInRight">
+                <p>Bu gizlilik politikası ile Yaz Bilgi Sistemleri'nin bir markası olan <a href="https://www.yaz.com.tr">www.yaz.com.tr</a> (Gizlilik politikasında “yaz.com.tr” olarak anılacaktır) üzerinden kullanıcıların yaz.com.tr'de bulunan kişisel bilgilerinin kullanımı ve korunması düzenlenmektedir.</p>
+                <p class="my-3">yaz.com.tr kullanıcılarının kişisel bilgileri, bu gizlilik politikası ile belirlenen esas ve kapsam haricinde hiçbir şekilde kullanılmayacak ve ancak kullanıcının açık rızası ile üçüncü kişilerle paylaşılacaktır.</p>
+                <p>Kullanıcıların kişisel bilgileri, adı – soyadı, doğum tarihi, telefon numarası, e-posta adresi, T.C kimlik numarası gibi kullanıcıyı doğrudan ya da dolaylı olarak tanımlamaya yönelik her türlü kişisel bilgi olup, bu gizlilik politikasında “kişisel bilgiler” olarak anılacaktır.</p>
+                <p class="mt-3">yaz.com.tr kullanıcılarının kişisel bilgileri, bu gizlilik politikası ile belirlenen esas ve kapsam haricinde hiçbir şekilde kullanılmayacak ve ancak kullanıcının açık rızası ile üçüncü kişilerle paylaşılacaktır.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInLeft">
+                <p class="mb-3">yaz.com.tr, kişisel bilgilerin ve yaz.com.tr kullanıcılarının gerçekleştirmiş olduğu işlem bilgilerinin güvenliğini ve gizliliğini sağlamak için gerekli önlemleri almaktadır. yaz.com.tr bu amaçla, başka programlar kullanabilir. Ancak, yaz.com.tr tarafından gerekli bilgi güvenliği önlemlerinin almasına karşın internet sitesine ve/veya sisteme yapılan saldırılar sonucunda kişisel bilgilerin zarar görmesi veya üçüncü kişilerin eline geçmesi durumunda, yaz.com.tr’nin bu nedenle herhangi bir sorumluluğu olmayacaktır.</p>
+                <p>Bir kullanıcının, bir başka kullanıcının bilgilerine ulaşması ve bu bilgileri değiştirmesi mümkün değildir. Kullanıcının kişisel bilgileri, yaz.com.tr haricinde yalnızca kullanıcı tarafından ulaşılabilir ve bu bilgiler ancak kullanıcı tarafından güncellenebilir. Kullanıcının talebi ile kişisel bilgiler yaz.com.tr tarafından da güncellenebilecektir. yaz.com.tr, kişisel bilgileri ölçümleme çalışmaları, reklam, tanıtım, pazarlama ile sair iletişim faaliyetleri amacıyla kullanabileceği ve Grup Şirketleri ile iş ortaklarıyla paylaşabileceği gibi yaz.com.tr tarafından sunulan hizmet kalitesinin arttırılması ve site faaliyetlerinin daha iyi şekilde yürütülmesi amacıyla da kayıt altına alınabilir ve kullanabilir.</p>
+            </div>
+            <div class="col-md text-center animate__animated animate__fadeInRight">
+                <img src="img/privacy-policies.png" class="w-75 rounded" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md text-start animate__animated animate__fadeInLeft">
+                <img src="img/privacy.jpg" class="w-75" alt="">
+            </div>
+            <div class="col-md d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInRight">
+                <p>İdari kurumlar ve adli kurumlar tarafından gelen talepler ve bildirimler doğrultusunda kişisel bilgiler, Gizlilik Politikasına uygun olarak adli ve idari kurumlar ile paylaşılabilir.</p> 
+                <p class="my-3">Kullanıcının kişisel bilgileri; gerçekleştirilen işlemlerde gerekli görülmesi halinde, sürecin hızlandırılması ve kullanıcılar arasındaki iletişimi sağlamak amacıyla işleme dahil olan diğer kullanıcı ile paylaşılabilir.</p>
+                <p>yaz.com.tr, internet sayfasını kullanan kullanıcıların istatistiksel bilgilerini, teknik bir iletişim dosyasını kullanarak elde edebilir. Kullanıcılar isterse, bu dosyayı engellemeye yönelik tarayıcı ayarlarını değiştirebilirler.</p>
+                <p class="mt-3">yaz.com.tr internet sitesini ziyaret eden her kullanıcı, yaz.com.tr gizlilik politikası hükümlerini onay vermeleri halinde kabul etmiş sayılacaktır.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="row">
+            <div class="col-md" id="F-logo">
+                <div class="logo">
+                    <img src="img/logo-main.png" alt="">
+                </div>
+            </div>
+            <div class="col-md" id="F-menu">
+                <div class="row">
+                    <div class="col-md">
+                        <ul>
+                            <li><a href="kvkk.html">KVKK Metni</a></li>
+                            <li><a href="career.html#HMN">İnsan Kaynakları</a></li>
+                            <li><a href="about.html#BGYS">BGYS Politikamız</a></li>
+                            <li><a href="about.html#QLT">Kalite Politikamız</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <ul>
+                            <li><a href="news.html">Haberler</a></li>
+                            <li><a href="privacy.html">Çerez Politikası</a></li>
+                            <li><a href="about.html#MSYN">Misyon / Vizyon</a></li>
+                            <li><a href="career.html">Kariyer Noktası</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="social_media">
+                        <a href="https://twitter.com/yaz_bilgi/" class="me-4"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://tr.linkedin.com/company/yazbilgisistemleri" class="me-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://tr-tr.facebook.com/yazbilgisistemleri/"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md" id="F-map">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6020.448278255066!2d28.889362999999996!3d41.020352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabae2250a2b8b%3A0xfcb124105bcf6ca5!2sYAZ%20Bilgi%20Sistemleri!5e0!3m2!1str!2sus!4v1703838395708!5m2!1str!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="">
+                    <p class="text-light" style="font-size: 13px;">
+                        Yıldız Teknik Üniversitesi Davutpaşa Kampüsü Teknoloji Geliştirme Bölgesi A-2 Blok No:Z-02 Esenler/İSTANBUL,34220
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- COPYRIGHT START -->
+    <div class="copyright">
+        <div class="container-fluid p-2 text-center bg-primary text-light">
+            <p class="fw-medium mt-1">© Yaz Bilgi Sistemleri ve Tic. A.Ş.Tüm Hakkı Saklıdır. </p>
+        </div>
+    </div>
+    <!-- COPYRIGHT END -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

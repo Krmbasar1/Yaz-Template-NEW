@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Yaz Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body id="body">
+    <!-- NAVBAR START -->
+    <nav id="navbar">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex tel mb-2"><i class="bi bi-telephone me-2 text-light"></i><a href="tel: +90 212 288 53 70 | 71 | 72" class="text-light">+90 212 288 53 70 | 71 | 72</a></div>
+                <div class="d-flex mail"><i class="bi bi-envelope-at me-2 text-light"></i><a href="mailto:info@yaz.com.tr" class="text-light">info@yaz.com.tr</a></div>
+            </div>
+            <div class="col-6">
+                <div class="clip text-center" id="menu-clip" onclick="Open_M()">
+                    <h2>MENU</h2>
+                </div>
+            </div>
+            <div class="col text-end">
+                <div class="social_media mb-2">
+                    <a href="https://twitter.com/yaz_bilgi/" class="me-4"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://tr.linkedin.com/company/yazbilgisistemleri" class="me-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://tr-tr.facebook.com/yazbilgisistemleri/"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class="lang">
+                    <i class="bi bi-translate text-light" onclick="Open_Lang()"></i>
+                    <div class="lang-select" id="langSelect">
+                        <div class="tr">
+                            <a href=""><svg width="24px" height="24px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_503_4206)"> <rect width="28" height="20" rx="2" fill="white"></rect> <mask id="mask0_503_4206" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"> <rect width="28" height="20" rx="2" fill="white"></rect> </mask> <g mask="url(#mask0_503_4206)"> <rect width="28" height="20" fill="#E92434"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0208 10.7684L17.796 12.2533L17.8795 10.3302L16.0887 9.62423L17.9434 9.1093L18.0615 7.18799L19.1244 8.79287L20.9881 8.31142L19.7902 9.81822L20.8241 11.442L19.0208 10.7684V10.7684V10.7684V10.7684Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4028 13.6838C16.3049 15.0934 14.5916 16 12.6665 16C9.3528 16 6.6665 13.3137 6.6665 10C6.6665 6.68629 9.3528 4 12.6665 4C14.5916 4 16.3049 4.90659 17.4028 6.31611C16.5555 5.70019 15.4902 5.33331 14.333 5.33331C11.5716 5.33331 9.33301 7.42265 9.33301 9.99998C9.33301 12.5773 11.5716 14.6666 14.333 14.6666C15.4902 14.6666 16.5556 14.2997 17.4028 13.6838Z" fill="white"></path> </g> </g> <defs> <clipPath id="clip0_503_4206"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg></a>
+                        </div>
+                        <div class="en">
+                            <a href=""><svg width="24px" height="24px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_503_3486)"> <rect width="28" height="20" rx="2" fill="white"></rect> <mask id="mask0_503_3486" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"> <rect width="28" height="20" rx="2" fill="white"></rect> </mask> <g mask="url(#mask0_503_3486)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H0V1.33333H28V0ZM28 2.66667H0V4H28V2.66667ZM0 5.33333H28V6.66667H0V5.33333ZM28 8H0V9.33333H28V8ZM0 10.6667H28V12H0V10.6667ZM28 13.3333H0V14.6667H28V13.3333ZM0 16H28V17.3333H0V16ZM28 18.6667H0V20H28V18.6667Z" fill="#D02F44"></path> <rect width="12" height="9.33333" fill="#46467F"></rect> <g filter="url(#filter0_d_503_3486)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66665 1.99999C2.66665 2.36818 2.36817 2.66666 1.99998 2.66666C1.63179 2.66666 1.33331 2.36818 1.33331 1.99999C1.33331 1.63181 1.63179 1.33333 1.99998 1.33333C2.36817 1.33333 2.66665 1.63181 2.66665 1.99999ZM5.33331 1.99999C5.33331 2.36818 5.03484 2.66666 4.66665 2.66666C4.29846 2.66666 3.99998 2.36818 3.99998 1.99999C3.99998 1.63181 4.29846 1.33333 4.66665 1.33333C5.03484 1.33333 5.33331 1.63181 5.33331 1.99999ZM7.33331 2.66666C7.7015 2.66666 7.99998 2.36818 7.99998 1.99999C7.99998 1.63181 7.7015 1.33333 7.33331 1.33333C6.96512 1.33333 6.66665 1.63181 6.66665 1.99999C6.66665 2.36818 6.96512 2.66666 7.33331 2.66666ZM10.6666 1.99999C10.6666 2.36818 10.3682 2.66666 9.99998 2.66666C9.63179 2.66666 9.33331 2.36818 9.33331 1.99999C9.33331 1.63181 9.63179 1.33333 9.99998 1.33333C10.3682 1.33333 10.6666 1.63181 10.6666 1.99999ZM3.33331 3.99999C3.7015 3.99999 3.99998 3.70152 3.99998 3.33333C3.99998 2.96514 3.7015 2.66666 3.33331 2.66666C2.96512 2.66666 2.66665 2.96514 2.66665 3.33333C2.66665 3.70152 2.96512 3.99999 3.33331 3.99999ZM6.66665 3.33333C6.66665 3.70152 6.36817 3.99999 5.99998 3.99999C5.63179 3.99999 5.33331 3.70152 5.33331 3.33333C5.33331 2.96514 5.63179 2.66666 5.99998 2.66666C6.36817 2.66666 6.66665 2.96514 6.66665 3.33333ZM8.66665 3.99999C9.03484 3.99999 9.33331 3.70152 9.33331 3.33333C9.33331 2.96514 9.03484 2.66666 8.66665 2.66666C8.29846 2.66666 7.99998 2.96514 7.99998 3.33333C7.99998 3.70152 8.29846 3.99999 8.66665 3.99999ZM10.6666 4.66666C10.6666 5.03485 10.3682 5.33333 9.99998 5.33333C9.63179 5.33333 9.33331 5.03485 9.33331 4.66666C9.33331 4.29847 9.63179 3.99999 9.99998 3.99999C10.3682 3.99999 10.6666 4.29847 10.6666 4.66666ZM7.33331 5.33333C7.7015 5.33333 7.99998 5.03485 7.99998 4.66666C7.99998 4.29847 7.7015 3.99999 7.33331 3.99999C6.96512 3.99999 6.66665 4.29847 6.66665 4.66666C6.66665 5.03485 6.96512 5.33333 7.33331 5.33333ZM5.33331 4.66666C5.33331 5.03485 5.03484 5.33333 4.66665 5.33333C4.29846 5.33333 3.99998 5.03485 3.99998 4.66666C3.99998 4.29847 4.29846 3.99999 4.66665 3.99999C5.03484 3.99999 5.33331 4.29847 5.33331 4.66666ZM1.99998 5.33333C2.36817 5.33333 2.66665 5.03485 2.66665 4.66666C2.66665 4.29847 2.36817 3.99999 1.99998 3.99999C1.63179 3.99999 1.33331 4.29847 1.33331 4.66666C1.33331 5.03485 1.63179 5.33333 1.99998 5.33333ZM3.99998 5.99999C3.99998 6.36819 3.7015 6.66666 3.33331 6.66666C2.96512 6.66666 2.66665 6.36819 2.66665 5.99999C2.66665 5.6318 2.96512 5.33333 3.33331 5.33333C3.7015 5.33333 3.99998 5.6318 3.99998 5.99999ZM5.99998 6.66666C6.36817 6.66666 6.66665 6.36819 6.66665 5.99999C6.66665 5.6318 6.36817 5.33333 5.99998 5.33333C5.63179 5.33333 5.33331 5.6318 5.33331 5.99999C5.33331 6.36819 5.63179 6.66666 5.99998 6.66666ZM9.33331 5.99999C9.33331 6.36819 9.03484 6.66666 8.66665 6.66666C8.29846 6.66666 7.99998 6.36819 7.99998 5.99999C7.99998 5.6318 8.29846 5.33333 8.66665 5.33333C9.03484 5.33333 9.33331 5.6318 9.33331 5.99999ZM9.99998 8C10.3682 8 10.6666 7.70152 10.6666 7.33333C10.6666 6.96514 10.3682 6.66666 9.99998 6.66666C9.63179 6.66666 9.33331 6.96514 9.33331 7.33333C9.33331 7.70152 9.63179 8 9.99998 8ZM7.99998 7.33333C7.99998 7.70152 7.7015 8 7.33331 8C6.96512 8 6.66665 7.70152 6.66665 7.33333C6.66665 6.96514 6.96512 6.66666 7.33331 6.66666C7.7015 6.66666 7.99998 6.96514 7.99998 7.33333ZM4.66665 8C5.03484 8 5.33331 7.70152 5.33331 7.33333C5.33331 6.96514 5.03484 6.66666 4.66665 6.66666C4.29846 6.66666 3.99998 6.96514 3.99998 7.33333C3.99998 7.70152 4.29846 8 4.66665 8ZM2.66665 7.33333C2.66665 7.70152 2.36817 8 1.99998 8C1.63179 8 1.33331 7.70152 1.33331 7.33333C1.33331 6.96514 1.63179 6.66666 1.99998 6.66666C2.36817 6.66666 2.66665 6.96514 2.66665 7.33333Z" fill="url(#paint0_linear_503_3486)"></path> </g> </g> </g> <defs> <filter id="filter0_d_503_3486" x="1.33331" y="1.33333" width="9.33331" height="7.66667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix> <feOffset dy="1"></feOffset> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"></feColorMatrix> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_3486"></feBlend> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_3486" result="shape"></feBlend> </filter> <linearGradient id="paint0_linear_503_3486" x1="1.33331" y1="1.33333" x2="1.33331" y2="7.99999" gradientUnits="userSpaceOnUse"> <stop stop-color="white"></stop> <stop offset="1" stop-color="#F0F0F0"></stop> </linearGradient> <clipPath id="clip0_503_3486"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- NAVBAR-MENU START -->
+    <div class="menu_container">
+        <div class="M_container"  id="menu-open">
+            <div class="up-1"><a href="index.html">Anasayfa</a></div>
+            <div class="down-1"><a href="services.html">Hizmetlerimiz</a></div>
+            <div class="up-2"><a href="product.html">Ürünlerimiz</a></div>
+            <div class="down-2"><a href="about.html">Hakkımızda</a></div>
+            <div class="up-3"><a href="contact.html">İletişim</a></div>
+        </div>
+    </div>
+    <!-- NAVBAR-MENU END -->
+    <!-- HEADER START -->
+    <header class="home">
+        <div class="header-container">
+            <div class="row w-100">
+                <div class="col-md circle-div d-flex align-items-center">
+                    <div class="circle-container">
+                        <div class="circle">
+                            <img src="img/logo-main.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="auto-slider">
+                        <div class="row d-flex flex-column">
+                            <div class="col-md w-75">
+                                <a href="services.html" class="slider-content d-flex">
+                                    <div class="icon"><svg width="75px" height="75px" viewBox="-102.4 -102.4 1228.80 1228.80" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M464.8 409.7C431.9 365 378.9 336 319.2 336c-99.8 0-180.7 80.9-180.7 180.7s80.9 180.7 180.7 180.7h297.3c149.3 0 270.3-121 270.3-270.3s-121-270.3-270.3-270.3c-118.7 0-219.6 76.5-255.9 183" fill="#FFFFFF"></path><path d="M823.5 766.5c0-3.2 0.5-6.3 1.5-9.2H631V417.4c0-5.5-4.5-10-10-10s-10 4.5-10 10v359.9h214.6c-1.3-3.3-2.1-7-2.1-10.8z" fill="#06F3FF"></path><path d="M230.2 791.7c-3.5-8.7-12-14.9-22-14.9-13.1 0-23.7 10.6-23.7 23.7s10.6 23.7 23.7 23.7c9.5 0 17.7-5.6 21.5-13.7 1.4-3 2.2-6.4 2.2-10 0-3.1-0.6-6.1-1.7-8.8z" fill="#E6E6E6"></path><path d="M852.2 737.9c-12.6 0-23.3 8.1-27.1 19.4-1 2.9-1.5 6-1.5 9.2 0 3.8 0.7 7.4 2.1 10.8 4.3 10.5 14.5 17.9 26.6 17.9 15.8 0 28.7-12.8 28.7-28.7-0.1-15.8-13-28.6-28.8-28.6zM700 257.7c2.1-5.1-0.3-11-5.4-13.1-78-32.3-135.3-15.6-169.6 4.1-37.2 21.3-55.7 50.2-56.4 51.5-2.9 4.7-1.5 10.8 3.1 13.8 1.7 1 3.5 1.5 5.3 1.5 3.3 0 6.6-1.6 8.5-4.6 0.2-0.3 17.1-26.4 50.2-45.2 44.1-24.9 94.9-25.8 151.2-2.5 5.1 2 11-0.4 13.1-5.5z" fill="#005BFF"></path><path d="M852.2 819.8c-12.4 0-22.9 7.8-26.9 18.8H534.5V717.3H611v-40h-76.5V537.9c0-5.5-4.5-10-10-10s-10 4.5-10 10v139.4h-66.9V537.9c0-5.5-4.5-10-10-10s-10 4.5-10 10v139.4H319.2c-88.6 0-160.7-72.1-160.7-160.7s72.1-160.7 160.7-160.7c50.9 0 99.3 24.5 129.5 65.6 6.5 8.9 19.1 10.8 28 4.3 8.9-6.5 10.8-19.1 4.3-28-18.3-24.8-42.4-45.4-69.7-59.5-7.9-4.1-16.1-7.7-24.5-10.7 39.3-91 129.3-150.8 229.8-150.8 138 0 250.3 112.3 250.3 250.3 0 133.1-104.4 242.2-235.7 249.8V717c72.1-3.5 139.3-33.3 190.7-84.7 54.8-54.8 85-127.7 85-205.2s-30.2-150.4-85-205.2c-54.8-54.8-127.7-85-205.2-85-118.8 0-224.9 72.1-269.1 181.2-9.3-1.3-18.8-2-28.2-2-110.7 0-200.7 90-200.7 200.7s90 200.7 200.7 200.7h108.4v73.9H250.9c-4.3-19.6-21.8-34.4-42.7-34.4-24.1 0-43.7 19.6-43.7 43.7s19.6 43.7 43.7 43.7c20.4 0 37.6-14.1 42.4-33h197v-93.9h66.9v141.3h310.9c4.1 10.8 14.6 18.5 26.8 18.5 15.8 0 28.7-12.8 28.7-28.7 0-16-12.9-28.8-28.7-28.8z m-622.5-9.3c-3.8 8.1-12 13.7-21.5 13.7-13.1 0-23.7-10.6-23.7-23.7s10.6-23.7 23.7-23.7c9.9 0 18.5 6.2 22 14.9 1.1 2.7 1.7 5.7 1.7 8.8 0 3.6-0.8 7-2.2 10z" fill="#005BFF"></path></g></svg></div>
+                                    <p class="txt ms-4 text-light d-flex align-items-center">Dış Kaynak Kiralama Hizmetleri</p>
+                                </a>
+                            </div>
+                            <div class="col-md mt-5 w-75" id="active-slide">
+                                <a href="services.html" class="slider-content d-flex">
+                                    <div class="icon">
+                                        <svg width="75px" height="75px" viewBox="-102.4 -102.4 1228.80 1228.80" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M854.7 828.1H169.9c-38.9 0-70.5-31.6-70.5-70.5v-499c0-38.9 31.6-70.5 70.5-70.5h684.7c38.9 0 70.5 31.6 70.5 70.5v499c0.1 38.9-31.5 70.5-70.4 70.5z" fill="#FFFFFF"></path><path d="M885.2 258.1c0-16.5-13.5-30-30-30H169.4c-16.5 0-30 13.5-30 30v120.1h745.7V258.1z m-649.7 96.1c-28.2 0-51.2-23-51.2-51.2s23-51.2 51.2-51.2 51.2 23 51.2 51.2-22.9 51.2-51.2 51.2z m281.8-6.8H374.7c-24.1 0-43.7-19.6-43.7-43.7s19.6-43.7 43.7-43.7h142.6c24.1 0 43.7 19.6 43.7 43.7s-19.6 43.7-43.7 43.7z" fill="#E6E6E6"></path><path d="M213.3 752.8h298.8c5.5 0 10-4.5 10-10s-4.5-10-10-10H213.3c-8.5 0-15.4-6.9-15.4-15.4V524.6c0-5.5-4.5-10-10-10s-10 4.5-10 10v192.9c0.1 19.4 15.9 35.3 35.4 35.3z" fill="#06F3FF"></path><path d="M235.5 271.8c-17.2 0-31.2 14-31.2 31.2s14 31.2 31.2 31.2 31.2-14 31.2-31.2-14-31.2-31.2-31.2z" fill="#FFFFFF"></path><path d="M235.5 251.8c-28.2 0-51.2 23-51.2 51.2s23 51.2 51.2 51.2 51.2-23 51.2-51.2-22.9-51.2-51.2-51.2z m0 82.4c-17.2 0-31.2-14-31.2-31.2s14-31.2 31.2-31.2 31.2 14 31.2 31.2-14 31.2-31.2 31.2z" fill="#005BFF"></path><path d="M517.3 280.1H374.7c-13 0-23.7 10.6-23.7 23.7s10.6 23.7 23.7 23.7h142.6c13 0 23.7-10.6 23.7-23.7s-10.7-23.7-23.7-23.7z" fill="#FFFFFF"></path><path d="M517.3 260.1H374.7c-24.1 0-43.7 19.6-43.7 43.7s19.6 43.7 43.7 43.7h142.6c24.1 0 43.7-19.6 43.7-43.7s-19.6-43.7-43.7-43.7z m0 67.3H374.7c-13 0-23.7-10.6-23.7-23.7s10.6-23.7 23.7-23.7h142.6c13 0 23.7 10.6 23.7 23.7s-10.7 23.7-23.7 23.7z" fill="#005BFF"></path><path d="M855.2 188.1H169.4c-38.6 0-70 31.4-70 70v500c0 38.6 31.4 70 70 70h685.7c38.6 0 70-31.4 70-70v-500c0.1-38.6-31.3-70-69.9-70z m30 570c0 16.5-13.5 30-30 30H169.4c-16.5 0-30-13.5-30-30V398.2h745.7v359.9z m0-379.9H139.5V258.1c0-16.5 13.5-30 30-30h685.7c16.5 0 30 13.5 30 30v120.1z" fill="#005BFF"></path><path d="M459.9 624.6l-114.3-45.3 114.3-43.7v-46.5L296.1 560v39.5l163.8 71.2zM568.7 454.8h-34.4L475.1 702h33.8zM747.9 560.3l-164-70.9v45.8l114.4 44.5-114.4 45v46.2l164-71.4z" fill="#005BFF"></path></g></svg>
+                                    </div>
+                                    <p class="txt ms-4 d-flex align-items-center text-light">Yazılım Geliştirme Hizmetleri</p>
+                                </a>
+                            </div>
+                            <div class="col-md w-75">
+                                <a href="services.html" class="slider-content d-flex mt-5">
+                                    <div class="icon"><svg width="75px" height="75px" viewBox="-102.4 -102.4 1228.80 1228.80" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M686.8 235.9a27 28.7 0 1 0 54 0 27 28.7 0 1 0-54 0Z" fill="#005BFF"></path><path d="M686.8 461.3a27 28.7 0 1 0 54 0 27 28.7 0 1 0-54 0Z" fill="#005BFF"></path><path d="M774.3 180.3H180.2c-16.5 0-30 13.5-30 30v51.3c0 16.5 13.5 30 30 30h594.1c16.5 0 30-13.5 30-30v-51.3c0-16.6-13.5-30-30-30z m-327.8 65.6H207.1c-5.5 0-10-4.5-10-10s4.5-10 10-10h239.4c5.5 0 10 4.5 10 10s-4.5 10-10 10z m267.3 18.8c-14.9 0-27-12.9-27-28.7s12.1-28.7 27-28.7 27 12.9 27 28.7-12.1 28.7-27 28.7zM804.3 435.6c0-16.5-13.5-30-30-30H180.2c-16.5 0-30 13.5-30 30V487c0 16.5 13.5 30 30 30h394.7l32.7-20c5.9-3.6 12.7-5.6 19.7-5.7h0.7c6.4 0 12.9 1.6 18.6 4.5 6.1 3.1 11.3 7.7 15.1 13.3l5.4 7.9h48.8l4.3-8.4c2.4-4.7 5.7-8.8 9.9-12.1 3.9-3.2 8.4-5.5 13.3-6.9 3.6-1.1 7.4-1.6 11.1-1.6 6.4 0 12.8 1.6 18.5 4.5l25 12.8c3.9-5.1 6.2-11.4 6.2-18.3v-51.4zM713.8 490c-14.9 0-27-12.9-27-28.7s12.1-28.7 27-28.7 27 12.9 27 28.7-12.1 28.7-27 28.7z" fill="#FFFFFF"></path><path d="M774.3 140.3H180.2c-38.6 0-70 31.4-70 70v51.3c0 38.6 31.4 70 70 70h594.1c38.6 0 70-31.4 70-70v-51.3c0-38.6-31.4-70-70-70z m30 121.3c0 16.5-13.5 30-30 30H180.2c-16.5 0-30-13.5-30-30v-51.3c0-16.5 13.5-30 30-30h594.1c16.5 0 30 13.5 30 30v51.3z" fill="#005BFF"></path><path d="M446.5 225.9H207.1c-5.5 0-10 4.5-10 10s4.5 10 10 10h239.4c5.5 0 10-4.5 10-10s-4.5-10-10-10z" fill="#005BFF"></path><path d="M504.5 731.1c-4-5.8-6.4-12.4-6.9-19.4l-3.5-47.3c-0.8-10.4 2.6-20.3 9.5-27.9 1.9-2.1 3.9-3.9 6.1-5.5H180.2c-16.5 0-30 13.5-30 30v51.3c0 16.5 13.5 30 30 30h336.1c-4.7-2.9-8.7-6.7-11.8-11.2z" fill="#E6E6E6"></path><path d="M569.8 762.3c-3.1-4.6-5.9-9.4-8.5-14.3l-22.4 0.6h-1c-6.4 0-12.8-1.5-18.5-4.5-1.1-0.5-2.1-1.1-3.1-1.8H180.2c-16.5 0-30-13.5-30-30V661c0-16.5 13.5-30 30-30h329.5c1.9-1.4 4-2.6 6.2-3.6 4.8-2.2 10-3.4 15.4-3.5l21.3-0.6c0.4-1.1 0.8-2.1 1.2-3.2 1.7-4.2 3.5-8.4 5.6-12.3 2.5-4.9 5.4-9.8 8.6-14.6l-1.5-2.3H180.2c-38.6 0-70 31.4-70 70v51.3c0 38.6 31.4 70 70 70h399.7l2-3.9c-4.4-5-8.4-10.4-12.1-16z" fill="#005BFF"></path><path d="M769.9 661.6c-3.2-9-8-17.2-14.4-24.4-2-2.2-4-4.2-6.2-6.2-4.8-4.2-10.1-7.9-15.9-10.9-8.4-4.3-17.4-7-26.7-8-9.6-1-19.1-0.2-28.3 2.5-4.7 1.4-9.1 3.2-13.3 5.5-3.9 2.1-7.7 4.6-11.1 7.5-1.3 1.1-2.5 2.2-3.7 3.4-5.1 5-9.3 10.7-12.6 17-4 7.9-6.4 16.3-7 25.2-0.7 9.2 0.6 18.4 3.7 27.4 3.2 9 8 17.2 14.4 24.4 6.2 7 13.7 12.7 22.1 17 0.2 0.1 0.4 0.2 0.7 0.3 8.3 4.1 17 6.7 26.1 7.7 9.6 1 19.1 0.2 28.3-2.5 4.5-1.3 8.7-3 12.7-5.1 4.2-2.2 8.1-4.8 11.7-7.8 6.8-5.7 12.3-12.5 16.3-20.4 4-7.9 6.4-16.3 7-25.2 0.6-9.2-0.6-18.4-3.8-27.4z" fill="#FFFFFF"></path><path d="M876.5 654.4c-0.1-2-1.6-3.9-3.6-5-1-0.5-2.1-0.8-3.2-0.8l-26.4 0.7-18.4 0.5-0.7-1.7-3.8-8.7c-1.6-3.8-3.4-7.4-5.4-11-5.8-10.4-13-20-21.5-28.6l-7.8-7.9-0.8-0.8L805 552c0.4-0.7 0.5-1.5 0.4-2.3-0.2-1.8-1.6-3.7-3.6-4.8l-44-22.6c-1-0.5-2.1-0.8-3.2-0.8-2 0-3.7 0.9-4.4 2.3l-17 33.1-3.2 6.1-12-1.9c-6.9-1.1-13.9-1.6-20.8-1.6-9.1 0-18.3 1-27.1 2.9l-11.1 2.4-5.3-7.8-19.8-29c-0.7-1-1.6-1.8-2.6-2.3-1-0.5-2.2-0.8-3.3-0.8-1.1 0-2.1 0.3-2.9 0.8l-40.5 24.8c-1 0.6-1.6 1.4-1.8 2.5-0.3 1.3 0 2.6 0.9 3.9l0.2 0.2 23.2 34 2.3 3.4-7.7 9.7c-4.1 5.2-7.7 10.6-10.8 16.1-0.6 1-1.1 2-1.6 3-1.3 2.5-2.5 5.2-3.6 7.9-1.8 4.3-3.3 8.7-4.6 13.3l-3.3 11.9-45.5 1.2c-1.5 0-2.8 0.6-3.7 1.5-0.7 0.8-1 1.8-1 2.9l3.5 47.3c0.1 2 1.6 3.9 3.6 5 1 0.5 2.1 0.8 3.2 0.8l44.7-1.2 4.5 10.4c2.7 6.3 6 12.3 9.7 18.1 4.6 7.1 9.9 13.8 15.8 20 0.5 0.5 1 1 1.4 1.5l8.6 8.6-5.1 9.9-15 29.3c-0.7 1.4-0.4 2.8-0.1 3.6 0.6 1.5 1.7 2.7 3.3 3.5l44 22.6c1 0.5 2.1 0.8 3.2 0.8 2 0 3.7-0.9 4.4-2.3l20.1-39.2 12 1.9c6.9 1.1 13.9 1.6 20.8 1.6 9.1 0 18.3-1 27.1-2.9l11.1-2.4 25.1 36.8c0.7 1 1.6 1.8 2.6 2.3 1 0.5 2.2 0.8 3.3 0.8 1.1 0 2.1-0.3 2.9-0.8l40.5-24.8c1-0.6 1.6-1.4 1.8-2.5 0.3-1.6-0.3-3-0.9-3.9l-20.9-30.7-4.7-7 7.2-9 0.5-0.6c4.9-6.1 9-12.5 12.4-19.1 2.3-4.4 4.3-9.2 6-14.1 0.8-2.3 1.6-4.7 2.2-7.1l3.4-11.9 14.4-0.4 31.1-0.8c1.5 0 2.8-0.6 3.7-1.5 0.7-0.8 1-1.8 1-2.9l-3.5-47.3zM661.3 760.7c-9.4-4.8-17.8-11-25-18.4-1.1-1.1-2.1-2.2-3.2-3.4-8.3-9.3-14.5-19.9-18.6-31.5-4.1-11.7-5.7-23.7-4.9-35.8 0.8-11.7 3.9-22.9 9.3-33.3 1.3-2.6 2.7-5 4.3-7.4 2.5-3.8 5.3-7.5 8.3-10.9 2.8-3.1 5.8-6 9-8.6 9.3-7.7 20-13.4 31.9-16.9 6.5-1.9 13.1-3.1 19.8-3.6 4.4-0.3 8.8-0.3 13.3 0l3.3 0.3c11.9 1.3 23.4 4.7 34.1 10.2 9.5 4.9 18 11.1 25.3 18.7 1 1 1.9 2 2.9 3.1 2.3 2.6 4.4 5.2 6.4 8 5.2 7.2 9.3 15.1 12.2 23.5 4.1 11.7 5.7 23.7 4.9 35.8-0.8 11.7-3.9 22.9-9.3 33.3-3.5 6.8-7.8 13-12.9 18.6-2.7 3-5.6 5.7-8.7 8.3-5.6 4.6-11.7 8.5-18.2 11.7-4.4 2.1-8.9 3.9-13.7 5.3-11.8 3.5-24.1 4.6-36.4 3.3-10.7-1.1-21-4-30.7-8.6-1.1-0.6-2.2-1.1-3.4-1.7z" fill="#FFFFFF"></path><path d="M913.5 699.2l-3.5-47.3c-0.5-6.9-2.9-13.6-6.9-19.4-3.8-5.5-9-10-14.9-13-5.7-2.9-12.1-4.5-18.5-4.5h-1l-22.4 0.6c-5.7-10.8-12.6-21-20.6-30.4l9.2-17.9c2.4-4.7 3.8-9.8 4.1-15.1 0.3-5-0.5-10-2.2-14.8-1.3-3.6-3.1-7-5.3-10.1 8.1-11.4 12.8-25.3 12.8-40.3v-51.3c0-38.6-31.4-70-70-70H180.2c-38.6 0-70 31.4-70 70V487c0 38.6 31.4 70 70 70h369.1c0.1 1.4 0.3 2.7 0.6 4.1 1 5.2 3.1 10.1 6.1 14.5l10.5 15.4 1.5 2.3c-3.2 4.8-6.1 9.6-8.6 14.6-2 3.9-3.9 8.1-5.6 12.3-0.4 1.1-0.8 2.1-1.2 3.2l-21.3 0.6c-5.4 0.1-10.6 1.3-15.4 3.5-2.2 1-4.3 2.2-6.2 3.6-2.2 1.6-4.3 3.4-6.1 5.5-6.9 7.7-10.3 17.6-9.5 27.9l3.5 47.3c0.5 6.9 2.9 13.6 6.9 19.4 3.1 4.5 7.2 8.3 11.8 11.3 1 0.6 2 1.2 3.1 1.8 5.7 2.9 12.1 4.5 18.5 4.5h1l22.4-0.6c2.6 4.9 5.4 9.7 8.5 14.3 3.7 5.6 7.7 10.9 12.1 16.1l-2 3.9-7.2 14c-2.4 4.7-3.8 9.8-4.1 15.1-0.3 5 0.5 10 2.2 14.8 3.4 9.7 10.4 17.6 19.7 22.4l44 22.6c5.8 2.9 12.2 4.5 18.5 4.5 3.8 0 7.5-0.5 11.1-1.6 4.9-1.4 9.4-3.8 13.3-6.9 4.1-3.3 7.5-7.4 9.9-12.1l9.2-17.9c4.6 0.4 9.2 0.6 13.8 0.6 7.7 0 15.3-0.5 22.9-1.6l12.6 18.5c3.8 5.6 9 10.2 15.1 13.3 5.7 2.9 12.2 4.5 18.6 4.5h0.7c7-0.1 13.8-2.1 19.7-5.7l40.5-24.8c8.9-5.4 14.9-14 17.1-24.1 1.1-5 1.1-10.2 0.1-15.3-1-5.2-3.1-10.1-6.1-14.5l-12-17.6c3.2-4.8 6.1-9.6 8.6-14.6 2.5-4.9 4.8-10.1 6.8-15.5l21.3-0.6c5.4-0.1 10.6-1.3 15.4-3.5 4.7-2.2 8.9-5.2 12.3-9 7-8 10.4-17.9 9.6-28.3zM150.2 487v-51.3c0-16.5 13.5-30 30-30h594.1c16.5 0 30 13.5 30 30V487c0 6.9-2.3 13.2-6.2 18.3l-25-12.8c-5.8-2.9-12.2-4.5-18.5-4.5-3.8 0-7.5 0.5-11.1 1.6-4.9 1.4-9.4 3.8-13.3 6.9-4.1 3.3-7.5 7.4-9.9 12.1L716 517h-48.8l-5.4-7.9c-3.8-5.6-9-10.2-15.1-13.3-5.8-2.9-12.2-4.5-18.6-4.5h-0.7c-7 0.1-13.8 2.1-19.7 5.7L575 517H180.2c-16.5 0-30-13.5-30-30z m728.9 217.7c-0.9 1-2.1 1.5-3.7 1.5l-31.1 0.8-14.4 0.4-3.4 11.9c-0.7 2.4-1.4 4.8-2.2 7.1-1.7 4.9-3.7 9.7-6 14.1-3.3 6.5-7.5 12.9-12.4 19.1l-0.5 0.6-7.2 9 4.7 7 20.9 30.7c0.6 0.9 1.2 2.3 0.9 3.9-0.2 1-0.9 1.9-1.8 2.5L782.4 838c-0.8 0.5-1.8 0.8-2.9 0.8-1.1 0-2.2-0.3-3.3-0.8-1.1-0.5-2-1.3-2.6-2.3l-25.1-36.8-11.1 2.4c-8.9 1.9-18 2.9-27.1 2.9-6.9 0-13.9-0.6-20.8-1.6l-12-1.9-20.1 39.2c-0.7 1.4-2.4 2.3-4.4 2.3-1.1 0-2.2-0.3-3.2-0.8l-44-22.6c-1.6-0.8-2.7-2.1-3.3-3.5-0.3-0.7-0.6-2.2 0.1-3.6l15-29.3 5.1-9.9-8.6-8.6c-0.5-0.5-1-1-1.4-1.5-6-6.2-11.3-12.9-15.8-20-3.7-5.8-7-11.8-9.7-18.1l-4.5-10.4-44.7 1.2c-1.1 0-2.2-0.3-3.2-0.8-2.1-1.1-3.5-3-3.6-5l-3.5-47.3c-0.1-1.1 0.2-2.1 1-2.9 0.9-1 2.1-1.5 3.7-1.5l45.5-1.2 3.3-11.9c1.3-4.6 2.8-9.1 4.6-13.3 1.1-2.7 2.3-5.3 3.6-7.9 0.5-1 1.1-2 1.6-3 3-5.5 6.7-10.9 10.8-16.1l7.7-9.7-2.3-3.4-23.2-34-0.2-0.2c-0.9-1.3-1.2-2.6-0.9-3.9 0.2-1 0.9-1.9 1.8-2.5l40.5-24.8c0.8-0.5 1.8-0.8 2.9-0.8 1.1 0 2.2 0.3 3.3 0.8 1.1 0.5 2 1.3 2.6 2.3l19.8 29 5.3 7.8 11.1-2.4c8.9-1.9 18-2.9 27.1-2.9 6.9 0 13.9 0.6 20.8 1.6l12 1.9 3.1-6.1 17-33.1c0.7-1.4 2.4-2.3 4.4-2.3 1.1 0 2.2 0.3 3.2 0.8l44 22.6c2 1 3.4 2.9 3.6 4.8 0.1 0.8 0 1.6-0.4 2.3l-20.1 39.2 0.8 0.8 7.8 7.9c8.6 8.7 15.8 18.2 21.5 28.6 2 3.6 3.8 7.2 5.4 11l3.8 8.7 0.7 1.7 18.4-0.5 26.4-0.7c1.1 0 2.2 0.3 3.2 0.8 2.1 1.1 3.5 3 3.6 5l3.5 47.3c0.1 1.1-0.2 2.1-0.9 2.9z" fill="#005BFF"></path><path d="M692.2 591h13.3c-4.5-0.3-8.9-0.3-13.3 0z" fill="#06F3FF"></path><path d="M789.7 654.7c-2.9-8.4-7.1-16.3-12.2-23.5-2-2.8-4.1-5.4-6.4-8-0.9-1-1.9-2.1-2.9-3.1-7.3-7.5-15.8-13.8-25.3-18.7-10.7-5.5-22.2-8.9-34.1-10.2l-3.3-0.3h-13.3c-6.7 0.5-13.3 1.6-19.8 3.6-11.9 3.5-22.6 9.2-31.9 16.9-3.2 2.7-6.2 5.6-9 8.6-3.1 3.4-5.8 7-8.3 10.9-1.5 2.4-3 4.9-4.3 7.4-5.3 10.4-8.4 21.6-9.3 33.3-0.9 12.1 0.8 24.1 4.9 35.8 4.1 11.6 10.3 22.2 18.6 31.5 1 1.2 2.1 2.3 3.2 3.4 7.3 7.4 15.7 13.6 25 18.4 1.1 0.6 2.2 1.1 3.4 1.6 9.8 4.5 20.1 7.4 30.7 8.6 12.3 1.3 24.6 0.2 36.4-3.3 4.8-1.4 9.3-3.2 13.7-5.3 6.5-3.1 12.6-7 18.2-11.7 3.1-2.6 6-5.4 8.7-8.3 5.1-5.6 9.4-11.8 12.9-18.6 5.3-10.4 8.4-21.6 9.3-33.3 0.9-12-0.8-24-4.9-35.7z m-16 34.3c-0.6 8.8-3 17.3-7 25.2-4 7.9-9.5 14.7-16.3 20.4-3.6 3-7.5 5.6-11.7 7.8-4 2.1-8.2 3.8-12.7 5.1-9.2 2.7-18.7 3.6-28.3 2.5-9.1-1-17.8-3.6-26.1-7.7-0.2-0.1-0.4-0.2-0.7-0.3-8.4-4.3-15.9-10.1-22.1-17-6.4-7.2-11.3-15.4-14.4-24.4-3.1-9-4.4-18.2-3.7-27.4 0.6-8.8 3-17.3 7-25.2 3.3-6.4 7.5-12.1 12.6-17 1.2-1.2 2.4-2.3 3.7-3.4 3.4-2.9 7.2-5.4 11.1-7.5 4.2-2.2 8.6-4.1 13.3-5.5 9.2-2.7 18.7-3.6 28.3-2.5 9.3 1 18.3 3.7 26.7 8 5.8 3 11.1 6.6 15.9 10.9 2.2 1.9 4.3 4 6.2 6.2 6.4 7.2 11.3 15.4 14.4 24.4 3.2 9 4.4 18.2 3.8 27.4z" fill="#06F3FF"></path></g></svg></div>
+                                    <p class="txt ms-4 text-light d-flex align-items-center">Sistem Altyapı Hizmetleri</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <div class="line" style="height: 1vh; background-color: rgb(0, 97, 224);"></div>
+    <!-- INFINITY AUTO REFERANCE SLİDER START -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="img/ttb-logo.png" style="width: 50%;" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/ticaret.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/tarim.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/bddk.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/bfb.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/adabank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/qnb.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/fibabanka.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/hsbc.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/ing.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/kaynak.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/asum.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/birlesim.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/afbbank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/asbbank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/trfinans.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/turklandbank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/bankpozitif.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scania.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/societe.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/jpmorgan.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/rbs.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/teb.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/tjk.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/tkdk.png" alt="">
+            </div>
+
+            <!-- INFINITY AUTO REFERANCE SLİDER MİDDLE -->
+
+            <div class="slide">
+                <img src="img/ttb-logo.png" style="width: 50%;" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/ticaret.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/tarim.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/bddk.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/bfb.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/adabank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/qnb.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/fibabanka.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/hsbc.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/ing.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/kaynak.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/asum.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/birlesim.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/afbbank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/asbbank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/trfinans.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/turklandbank.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/bankpozitif.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/scania.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/societe.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/jpmorgan.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/rbs.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/teb.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/tjk.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/tkdk.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- INFINITY AUTO REFERANCE SLİDER END -->
+    <div class="line" style="height: 1vh; background-color: rgb(0, 97, 224);"></div>
+    <div class="goTopBtn"><i class="bi bi-arrow-up"></i></div>
+    <!-- NEWS CARD SECTION START -->
+    <section class="mb-5 Home">
+        <div class="news-container">
+            <div class="header text-center my-4">
+                <h2>Haberler</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <a href="news.html" class="card h-100">
+                        <img src="img/news-1.jfif" class="card-img-top rounded" alt="...">
+                        <div class="card-body p-3">
+                          <h5 class="card-title text-light fw-light ps-3">1.1.2024</h5>
+                          <p class="card-text"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="news.html" class="card h-100">
+                        <img src="img/news-1.jfif" class="card-img-top rounded" alt="...">
+                        <div class="card-body p-3">
+                          <h5 class="card-title text-light fw-light ps-3">1.1.2024</h5>
+                          <p class="card-text"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="news.html" class="card h-100">
+                        <img src="img/news-1.jfif" class="card-img-top rounded" alt="...">
+                        <div class="card-body p-3">
+                          <h5 class="card-title text-light fw-light ps-3">1.1.2024</h5>
+                          <p class="card-text"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWS CARD SECTION END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="row">
+            <div class="col-md" id="F-logo">
+                <div class="logo">
+                    <img src="img/logo-main.png" alt="">
+                </div>
+            </div>
+            <div class="col-md" id="F-menu">
+                <div class="row">
+                    <div class="col-md">
+                        <ul>
+                            <li><a href="kvkk.html">KVKK Metni</a></li>
+                            <li><a href="career.html#HMN">İnsan Kaynakları</a></li>
+                            <li><a href="about.html#BGYS">BGYS Politikamız</a></li>
+                            <li><a href="about.html#QLT">Kalite Politikamız</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <ul>
+                            <li><a href="news.html">Haberler</a></li>
+                            <li><a href="privacy.html">Çerez Politikası</a></li>
+                            <li><a href="about.html#MSYN">Misyon / Vizyon</a></li>
+                            <li><a href="career.html">Kariyer Noktası</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="social_media">
+                        <a href="https://twitter.com/yaz_bilgi/" class="me-4"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://tr.linkedin.com/company/yazbilgisistemleri" class="me-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://tr-tr.facebook.com/yazbilgisistemleri/"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md" id="F-map">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6020.448278255066!2d28.889362999999996!3d41.020352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabae2250a2b8b%3A0xfcb124105bcf6ca5!2sYAZ%20Bilgi%20Sistemleri!5e0!3m2!1str!2sus!4v1703838395708!5m2!1str!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="">
+                    <p class="text-light" style="font-size: 13px;">
+                        Yıldız Teknik Üniversitesi Davutpaşa Kampüsü Teknoloji Geliştirme Bölgesi A-2 Blok No:Z-02 Esenler/İSTANBUL,34220
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- COPYRIGHT START -->
+    <div class="copyright">
+        <div class="container-fluid p-2 text-center bg-primary text-light">
+            <p class="fw-medium mt-1">© Yaz Bilgi Sistemleri ve Tic. A.Ş.Tüm Hakkı Saklıdır. </p>
+        </div>
+    </div>
+    <!-- COPYRIGHT END -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
